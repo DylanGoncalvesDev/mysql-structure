@@ -99,11 +99,11 @@ Comments.comment_id,
 Comments.comment_text,
 Comments.publication_date,
 Comments_Reactions.reaction_type,
-Comments_Reactions.reaction_date
+Comments_Reactions.reaction_date,
 COUNT(Comments_Reactions.comment_reaction_id) AS total_reactions
 FROM Comments
 JOIN Comments_Reactions ON Comments_Reactions.comment_id = Comments.comment_id
-WHERE Comments.comment_id = 1;
+WHERE Comments.comment_id = 1
 GROUP BY 
 Comments.comment_id,
 Comments.comment_text,
