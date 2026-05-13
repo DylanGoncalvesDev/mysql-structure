@@ -18,32 +18,34 @@ The main objective of this project is to practice:
 
 The repository is organized by project and separated into different SQL stages to keep the code clean and easier to maintain.
 
-```
+```text
 mysql-structure/
 │
 ├── diagrams/
 │   ├── Level-1/
-│   │   ├── Optic.png
-│   │   └── Pizzeria.png
+│   │   ├── EER DIAGRAM Optic.png
+│   │   └── EER DIAGRAM Pizzeria.png
 │   │
 │   └── Level-2/
-│       └── Youtube.png
+│       └── EER DIAGRAM Youtube.png
 │
 ├── scripts/
-│   ├── optic/
-│   │   ├── 01_schema.sql
-│   │   ├── 02_insert_data.sql
-│   │   └── 03_test_queries.sql
+│   ├── Level-1/
+│   │   ├── optic/
+│   │   │   ├── 01_schema.sql
+│   │   │   ├── 02_insert_data.sql
+│   │   │   └── 03_test_queries.sql
+│   │   │
+│   │   └── pizzeria/
+│   │       ├── 01_schema.sql
+│   │       ├── 02_insert_data.sql
+│   │       └── 03_test_queries.sql
 │   │
-│   ├── pizzeria/
-│   │   ├── 01_schema.sql
-│   │   ├── 02_insert_data.sql
-│   │   └── 03_test_queries.sql
-│   │
-│   └── youtube/
-│       ├── 01_schema.sql
-│       ├── 02_insert_data.sql
-│       └── 03_test_queries.sql
+│   └── Level-2/
+│       └── youtube/
+│           ├── 01_schema.sql
+│           ├── 02_insert_data.sql
+│           └── 03_test_queries.sql
 │
 └── README.md
 ```
